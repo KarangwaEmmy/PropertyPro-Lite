@@ -7,65 +7,75 @@
 	<script src="js/custom.js"></script>
 </head>
 <body>
-<!-- <h1>Welcome to PropertyPro-Lite</h1> -->
-<header class="header" id="header">
-	<div class="top-header">
+	<header class="header" id="header">
+		<div class="top-header">
+			<div class="container">
+				<div class="site-info">
+					<span><i class="fa fa-clock" class="icon"></i>  Mon - Sat 8:00 am - 8:00 pm  Sunday CLOSED</span>
+				</div>
+				<div class="site-contact">
+					<span><i class="fa fa-phone-volume" class="icon"></i> Tel: (+250) 786639530</span>
+				</div>
+			</div>
+		</div>
+	
+	<!-- top header -->
+	<!-- toggle menu -->
+	<div class="toggle-menu">
+			<div class="logo-name logo-responsive">
+					<h1> <a href=""><span class="pron">Pro</span><span class="lite">-Lite</span></a></h1>
+				</div>
+				<div class="icon icon-toggle" onclick="myFunction()">
+						<span class="fa fa-bars"></span>
+				</div>
+	</div>
+	<!--== navigation header ==-->
+	<div class="middle-header">
 		<div class="container">
-			<div class="site-info">
-				<span><i class="fa fa-clock" class="icon"></i>  Mon - Sat 8:00 am - 8:00 pm  Sunday CLOSED</span>
+			<div class="logo logo-toggle">
+				<h1> <a href=""><span class="prom">Pro</span><span class="lite">-Lite</span></a></h1>
 			</div>
-			<div class="site-contact">
-				<span><i class="fa fa-phone-volume" class="icon"></i> Tel: (+250) 786639530</span>
+			<div class="site-nav" id="site-nav">
+				<ul>
+					<li class="active"> <a href="index.html" >Home</a></li>
+					<li> <a href="">Properties</a></li>
+					<li> <a href="Signup.html">Sign up</a></li>
+					<li> <a href="Login.html">Sign in</a></li>
+					<li class="advert"> <a href="Login.html">Create Advert</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
-
-<!-- top header -->
-<!-- toggle menu -->
-<div class="toggle-menu">
-		<div class="logo-name logo-responsive">
-				<h1> <a href=""><span class="pron">Pro</span><span class="lite">-Lite</span></a></h1>
-			</div>
-			<div class="icon icon-toggle" onclick="myFunction()">
-					<span class="fa fa-bars"></span>
-			</div>
-</div>
-<!--== navigation header ==-->
-<div class="middle-header">
-	<div class="container">
-		<div class="logo logo-toggle">
-			<h1> <a href=""><span class="prom">Pro</span><span class="lite">-Lite</span></a></h1>
-		</div>
-		<div class="site-nav" id="site-nav">
-			<ul>
-				<li class="active"> <a href="index.html" >Home</a></li>
-				<li> <a href="">About us</a></li>
-				<li> <a href="">Properties</a></li>
-				<li> <a href="">Services</a></li>
-				<li> <a href="Signup.html">Sign up</a></li>
-				<li> <a href="Login.html">Sign in</a></li>
-				<li class="advert"> <a href="Login.html">Create Advert</a></li>
-			</ul>
+	<!-- end of navigation header -->
+	<div class="bottom-header">
+		<!-- Slider images -->
+		<div class="container"></div>
+		<div class="pro-header" style="background-image: url(images/main.jpg);">
+			 
+			<form action="">
+				<h1 class="pro-text">Find <span>fantastic</span> property you <span>Love</span></h1><br>
+				<div class="form-box">
+					<select name="" class="search-field prosearch" id="">
+						<option value="Search">Search property</option>
+						<option value="house"> House</option>
+						<option value="building">1 floor</option>
+						<option value="2floor">2 floor</option>
+						<option value=""></option>
+					</select>
+					<select name="" class="search-field location" id="">
+							<option value="Search">Customize</option>
+							<option value="Room1"> 1 bedroom</option>
+							<option value="room2"> 2 bedroom</option>
+							<option value="room3">3 bedroom</option>
+							<option value="room4"> Miiniflat</option>
+						 
+						</select>
+					<input type="submit" name="" id="" class="search-btn" value="Search">
+				</div>
+			</form>
 		</div>
 	</div>
-</div>
-<!-- end of navigation header -->
-<div class="bottom-header">
-	<!-- Slider images -->
-	<div class="container"></div>
-	<div class="pro-header" style="background-image: url(images/main.jpg);">
-		 
-        <form action="">
-            <h1 class="pro-text">Find <span>fantastic</span> property you <span>Love</span></h1><br>
-            <div class="form-box">
-                <input type="text" class="search-field skills"  name="search" placeholder="Enter your search">
-                <input type="text" class="search-field  location" name="location" placeholder="Enter location">
-                <button class="search-btn" type="button">Search</button>
-            </div>
-        </form>
-    </div>
-</div>
-</header>
+	</header>
 <main class="main" id="main">
 	<div class="title">
 		<h1>PRODUCTS</h1>
@@ -76,20 +86,20 @@
 				<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 			</div>
 			<div class="prod-heading">
-				<h1>Product Title</h1>
+				<h1>Property name</h1>
 			</div>
 			<div class="old-prod">
-				<p>Rs. 299.99</p>
+				<p>Location:  Kigali city market.</p>
 			</div>
-			<div class="new-prod">
-				<p>Rs. 199.99</p>
+			<div class="price">
+				<p>Price:  Price:  $500</p>
 			</div>
 			<div class="product-bottom">
 				<div class="prod-detail">
-					<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+					<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 				</div>
-				<div class="cart-button">
-					<p><a href="#">Add to Cart</a></p>
+				<div class="view-button">
+					<p><a href="#">View More</a></p>
 				</div>
 			</div>
 		</div>
@@ -98,20 +108,20 @@
 				<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 			</div>
 			<div class="prod-heading">
-				<h1>Product Title</h1>
+				<h1>Property name</h1>
 			</div>
 			<div class="old-prod">
-				<p>Rs. 299.99</p>
+				<p>Location:  Kigali city market.</p>
 			</div>
-			<div class="new-prod">
-				<p>Rs. 199.99</p>
+			<div class="price">
+				<p>Price:  $500</p>
 			</div>
 			<div class="product-bottom">
 				<div class="prod-detail">
-					<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+					<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 				</div>
-				<div class="cart-button">
-					<p><a href="#">Add to Cart</a></p>
+				<div class="view-button">
+					<p><a href="#">View More</a></p>
 				</div>
 			</div>
 		</div>
@@ -120,20 +130,20 @@
 				<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 			</div>
 			<div class="prod-heading">
-				<h1>Product Title</h1>
+				<h1>Property name</h1>
 			</div>
 			<div class="old-prod">
-				<p>Rs. 299.99</p>
+				<p>Location:  Kigali city market.</p>
 			</div>
-			<div class="new-prod">
-				<p>Rs. 199.99</p>
+			<div class="price">
+				<p>Price:  $500</p>
 			</div>
 			<div class="product-bottom">
 				<div class="prod-detail">
-					<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+					<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 				</div>
-				<div class="cart-button">
-					<p><a href="#">Add to Cart</a></p>
+				<div class="view-button">
+					<p><a href="#">View More</a></p>
 				</div>
 			</div>
 		</div>
@@ -142,20 +152,20 @@
 				<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 			</div>
 			<div class="prod-heading">
-				<h1>Product Title</h1>
+				<h1>Property name</h1>
 			</div>
 			<div class="old-prod">
-				<p>Rs. 299.99</p>
+				<p>Location:  Kigali city market.</p>
 			</div>
-			<div class="new-prod">
-				<p>Rs. 199.99</p>
+			<div class="price">
+				<p>Price:  $500</p>
 			</div>
 			<div class="product-bottom">
 				<div class="prod-detail">
-					<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+					<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 				</div>
-				<div class="cart-button">
-					<p><a href="#">Add to Cart</a></p>
+				<div class="view-button">
+					<p><a href="#">View More</a></p>
 				</div>
 			</div>
 		</div>
@@ -169,20 +179,20 @@
 						<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 					</div>
 					<div class="prod-heading">
-						<h1>Product Title</h1>
+						<h1>Property name</h1>
 					</div>
 					<div class="old-prod">
-						<p>Rs. 299.99</p>
+						<p>Location:  Kigali city market.</p>
 					</div>
-					<div class="new-prod">
-						<p>Rs. 199.99</p>
+					<div class="price">
+						<p>Price:  $500</p>
 					</div>
 					<div class="product-bottom">
 						<div class="prod-detail">
-							<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+							<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 						</div>
-						<div class="cart-button">
-							<p><a href="#">Add to Cart</a></p>
+						<div class="view-button">
+							<p><a href="#">View More</a></p>
 						</div>
 					</div>
 				</div>
@@ -191,20 +201,20 @@
 						<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 					</div>
 					<div class="prod-heading">
-						<h1>Product Title</h1>
+						<h1>Property name</h1>
 					</div>
 					<div class="old-prod">
-						<p>Rs. 299.99</p>
+						<p>Location:  Kigali city market.</p>
 					</div>
-					<div class="new-prod">
-						<p>Rs. 199.99</p>
+					<div class="price">
+						<p>Price:  $500</p>
 					</div>
 					<div class="product-bottom">
 						<div class="prod-detail">
-							<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+							<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 						</div>
-						<div class="cart-button">
-							<p><a href="#">Add to Cart</a></p>
+						<div class="view-button">
+							<p><a href="#">View More</a></p>
 						</div>
 					</div>
 				</div>
@@ -213,20 +223,20 @@
 						<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 					</div>
 					<div class="prod-heading">
-						<h1>Product Title</h1>
+						<h1>Property name</h1>
 					</div>
 					<div class="old-prod">
-						<p>Rs. 299.99</p>
+						<p>Location:  Kigali city market.</p>
 					</div>
-					<div class="new-prod">
-						<p>Rs. 199.99</p>
+					<div class="price">
+						<p>Price:  $500</p>
 					</div>
 					<div class="product-bottom">
 						<div class="prod-detail">
-							<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+							<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 						</div>
-						<div class="cart-button">
-							<p><a href="#">Add to Cart</a></p>
+						<div class="view-button">
+							<p><a href="#">View More</a></p>
 						</div>
 					</div>
 				</div>
@@ -235,20 +245,20 @@
 						<a href="#"><img src="images/slider1.jpg" alt="product image"></a>
 					</div>
 					<div class="prod-heading">
-						<h1>Product Title</h1>
+						<h1>Property name</h1>
 					</div>
 					<div class="old-prod">
-						<p>Rs. 299.99</p>
+						<p>Location:  Kigali city market.</p>
 					</div>
-					<div class="new-prod">
-						<p>Rs. 199.99</p>
+					<div class="price">
+						<p>Price:  $500</p>
 					</div>
 					<div class="product-bottom">
 						<div class="prod-detail">
-							<p>Just the test fpr the tesy ot the imahe  and the power of the tyiping in th dtas os the recolution</p>
+							<p>Room type: 3 bedroom, 1 sitting room, 1 bathroom.</p>
 						</div>
-						<div class="cart-button">
-							<p><a href="#">Add to Cart</a></p>
+						<div class="view-button">
+							<p><a href="#">View More</a></p>
 						</div>
 					</div>
 				</div>

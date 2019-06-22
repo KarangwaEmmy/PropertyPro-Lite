@@ -8,7 +8,8 @@ body{
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .top-header{
-	background-color: #abcebd;
+	background: rgb(18,46,145);
+background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 	color:#fff;
 	padding: 5px 0px;
 }
@@ -68,7 +69,7 @@ color: #abcebd;
 	color: #abcebd;
 }
 .site-nav ul li a:hover{
-	color: #abc;
+	 	color: #abcaed;
 }
 .site-nav ul li a .advert{
 	color: #00ff00;
@@ -80,24 +81,30 @@ color: #abcebd;
 	padding: 5px 20px;
 	 
 }
+.prom{
+	height: 40px;
+}
 /* Image and search form css */
 
 .pro-header{
 	padding: 120px 0;
 	height: 100%;
 	background-size: cover;
-	background-position: bottom; 
+	background-position: center; 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	font-family: 'Courier New', Courier, monospace;
 }
 .pro-text{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center;
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	font-size: 50px;
 }
 span{
-	color: #b8807c;
+	color: rgba(0, 84, 163, 1);
+	text-decoration: none;
 }
 .search-field{
 	height: 37px;
@@ -112,12 +119,13 @@ span{
 .search-btn{
 	height: 50px;
 	width: 150px;
-	background: #f44336;
+	background: rgb(18,46,145);
+background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 	border: none; 
 	color: #fff;
 }
 .search-btn:hover{
-	background: #bb0d00;
+	background: rgb(88, 78, 78);
 	cursor: pointer;
 }
 .form-box{
@@ -153,9 +161,13 @@ input{
 	
  }
  .title{
-	 color: aqua;
-	 border-bottom: 3px solid #abcebd;
-	 margin: 20px 0px 20px 2px;
+	 color: rgb(8, 14, 14);
+	 margin: auto;
+
+ }
+ .prod-container{
+	 margin: auto;
+	 
  }
  .box-footer li{
 	 list-style: none;
@@ -333,7 +345,8 @@ float: left;
 }
 .view-button{
 	 padding: 10px;
-	 background: #abcebd;
+	 background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 	 margin: auto;
 }
 .view-button p a{
@@ -393,7 +406,7 @@ float: left;
 }
 
 /*inputs*/
-#proform input, select, #proform textarea {
+#proform input, select, option, #proform textarea {
 	padding: 15px;
 	border-radius: 10px;
     border: 1px solid #ccc;
@@ -453,7 +466,38 @@ label{
     box-shadow: 0 0 0 2px white, 0 0 0 3px #4e6f70;
 }
 /* End of form css */
-
+/* Style the list */
+ul.breadcrumb {
+	padding: 10px 66px;
+	list-style: none;
+	background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li {
+	display: inline;
+	font-size: 18px;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li+li:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li a {
+	color: #33383d;
+	text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li a:hover {
+	color: #01447e;
+	text-decoration: underline;
+  }
+  
  
  /* Responsoveness of the website */
 
@@ -525,6 +569,19 @@ label{
 		background-color: #abcebd;
 		padding: 0px 0;
 	} */
+	.product{
+		width: 33%;
+		height: auto;
+		float: left;
+		padding: 10px;
+		margin: 15px;
+		background: #fff;
+		margin-top: 30px;
+		-webkit-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+		transition: box-shadow 200ms ease-in-out; 
+	}
 	.box-project{
 		position: static;
 		padding: 20px 20px;
@@ -566,13 +623,13 @@ label{
 		}
 		.pro-text{
 			text-align: center;
-			font-size: 24px;
-			color: rgb(0, 0, 0);
+			font-size: 44px;
+			color: rgb(255, 255, 255);
 		}
 		span{
-			color: #b8807c;
+			color: rgba(0, 84, 163, 1);
 			float: center;
-			font-size: 24px;
+			font-size: 18px;
 		}
 		.search-field{
 			height: 27px;
@@ -582,14 +639,17 @@ label{
 		}
 		.prosearch{
 			width: 250px;
+			height: 20px;
 		}
 		.location{
 			width: 200px;
+			height: 20px;
 		}
 		 input .search-btn{
 			height: 20px;
 			width: 100px;
-			background: #25201f;
+			background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 			border: none; 
 			color: #fff;
 			float: center;
@@ -599,7 +659,8 @@ label{
 			color: #fff;
 		}
 		.search-btn:hover{
-			background: #bb0d00;
+			background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 			cursor: pointer;
 		}
 		.form-box{
@@ -633,11 +694,11 @@ label{
 }
 .pro-text{
 	text-align: center;
-	font-size: 20px;
-	color: rgb(0, 0, 0);
+	font-size: 24px;
+	color: rgb(251, 251, 251);
 }
 span .search{
-	color: #b8807c;
+	color: rgba(0, 84, 163, 1);
 	float: center;
 	font-size: 20px;
 }
@@ -653,20 +714,22 @@ span .search{
 .location{
 	width: 150px;
 }
-.search-btn{
-	height: 40px;
+input .search-btn{
+	height: 30px;
 	width: 100px;
-	background: #f44336;
+	background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 	border: none; 
 	color: #fff;
 	float: center;
 }
 .search-btn:hover{
-	background: #bb0d00;
+	background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 	cursor: pointer;
 }
 .form-box{
-	padding: 10px 10px;
+	padding: auto;
 
 	background:rgba(170, 157, 157, 0.5);
 	border-radius: 15px;
@@ -675,8 +738,117 @@ input{
 	font-size: 14px;
 }
 /* End of header search css */
-
-
+.product{
+	width: 100%;
+	height: auto;
+	float: left;
+	padding: 10px;
+	margin: 15px;
+	background: #fff;
+	margin-top: 30px;
+	-webkit-box-shadow: 0px 5px 3px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+	transition: box-shadow 200ms ease-in-out; 
+}
+.product-img{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.product-img img{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.prod-heading{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.prod-heading h1{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px;
+	color: #abcebd;
+	padding: 10px 0px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.prod-heading h1 a{
+	color: #abcebd;
+}
+.old-prod{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.old-prod{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	margin: 0px;
+	color: #333;
+	padding: 5px;
+	line-height: 1;
+	text-decoration: none;
+}
+.price{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.price{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 18px;
+	text-align: center;
+	margin: 0px;
+	color: rgb(102, 102, 163);
+	line-height: 1;
+	font-weight: 700;
+	padding: 10px;
+}
+.product-bottom{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	top: -5px;
+	opacity: 0;
+	transition: opacity 200ms, top 200ms ease-in-out;
+}
+.prod-detail{
+	width: 100%;
+	height: auto;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.prod-detail p{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	margin: 0px;
+	color: #333;
+	line-height: 1;
+	font-weight: 500;  
+}
+.view-button{
+	 padding: 10px;
+	 background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
+	 margin: auto;
+}
+.view-button p a{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	margin: 0px;
+	color: #fff;
+	font-weight: 500;
+	display: block;
+	text-decoration: none;
+}
 }
 
 
@@ -764,13 +936,13 @@ display: block;
 		}
 		.pro-text{
 			text-align: center;
-			font-size: 24px;
-			color: rgb(0, 0, 0);
+			font-size: 28px;
+			color: rgb(255, 255, 255);
 		}
 		span{
-			color: #b8807c;
+			color: rgba(0, 84, 163, 1);
 			float: center;
-			font-size: 24px;
+			font-size: 16px;
 		}
 		.search-field{
 			height: 30px;
@@ -787,13 +959,15 @@ display: block;
 		.search-btn{
 			height: 43px;
 			width: 100px;
-			background: #f44336;
+			background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 			border: none; 
 			color: #fff;
 			float: center;
 		}
 		.search-btn:hover{
-			background: #bb0d00;
+			background: rgb(18,46,145);
+	 background: linear-gradient(90deg, rgba(18,46,145,1) 0%, rgba(94,135,115,1) 52%, rgba(45,60,156,1) 100%);
 			cursor: pointer;
 		}
 		.form-box{
